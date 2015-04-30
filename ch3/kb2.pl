@@ -1,9 +1,3 @@
-child(anne,bridget).
-child(bridget,caroline).
-child(caroline,donna).
-child(donna,emily).
+numeral(0).
 
-descend(X,Y) :- child(X,Y).
-
-descend(X,Y) :- child(X,Z),
-    descend(Z,Y).
+numeral(succ(X)) :- numeral(X)
